@@ -24,9 +24,13 @@ export const formatStartEndDates = (
 
   const formattedStartDate = formatDate(startDate);
 
-  const formattedEndDate = endDate ? formatDate(endDate) : null;
+  if (endDate) {
+    const formattedEndDate = formatDate(endDate);
 
-  return [formattedStartDate, formattedEndDate].join(' - ');
+    return `${formattedStartDate} - ${formattedEndDate}`;
+  }
+
+  return formattedStartDate;
 };
 
 export function formatLocation(location?: LocationType | null): string | null {
