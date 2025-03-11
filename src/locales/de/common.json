@@ -1,0 +1,10 @@
+{
+  "HEADLINE": "Willkommen zur Frontend-Challenge!",
+  "GREETING": "Vielen Dank, dass du dir die Zeit nimmst, diese Herausforderung zu absolvieren. Deine Aufgabe ist es, eine Event-Listing-Seite mit React zu erstellen.",
+  "INFO": "Alle Details und Anforderungen findest du in der <a>README</a>-Datei. Viel Erfolg und viel Spaß beim Coden!",
+  "CTA": "Zu den Festivals",
+  "LOADING": "Lädt...",
+  "ERROR": "Oh Oh... Etwas ist schiefgelaufen.",
+  "SEARCH_PLACEHOLDER": "Suche nach Festivals...",
+  "EMPTY": "Keine Ergebnisse gefunden"
+}
