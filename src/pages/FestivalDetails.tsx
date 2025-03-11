@@ -10,6 +10,8 @@ import { formatLocation, formatStartEndDates } from 'src/utils/helpers';
 
 const FestivalDetailPage = () => {
   const { id } = useParams();
+
+  // was thinking of using redux here, but due to less time and too much boilerplate, i decided to simply fetch the data.
   const { data, isFetching, isError } = useQueryFestivals({});
 
   const festival = useMemo(() => {
