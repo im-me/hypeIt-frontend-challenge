@@ -2,10 +2,6 @@ import { LocationType } from 'src/api/generated/apiSchemas';
 import { formatLocation } from '../helpers';
 
 describe('formatLocation', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
   it('should return null when location is not given', () => {
     expect(formatLocation(null)).toBeNull();
 
