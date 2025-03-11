@@ -6,24 +6,24 @@ import { useTranslation } from 'react-i18next';
 import { FiSearch } from 'react-icons/fi';
 
 type SearchBarProps = {
-  searchTerm: string;
-  setSearchTerm: (value: string) => void;
+  value: string;
+  setValue: (value: string) => void;
 };
 
-export const SearchBar = ({ searchTerm, setSearchTerm }: SearchBarProps) => {
+export const SearchBar = ({ value, setValue }: SearchBarProps) => {
   const { t } = useTranslation('common');
 
   const handleOnChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      setSearchTerm(e.target.value);
+      setValue(e.target.value);
     },
-    [setSearchTerm]
+    [setValue]
   );
 
   return (
     <TextInput
       placeholder={t('SEARCH_PLACEHOLDER')}
-      value={searchTerm}
+      value={value}
       onChange={handleOnChange}
       mb="md"
       style={{ width: '400px' }}

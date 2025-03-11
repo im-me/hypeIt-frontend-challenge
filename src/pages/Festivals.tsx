@@ -60,7 +60,7 @@ export const Festivals = () => {
         Festivals
       </Title>
 
-      <SearchBar searchTerm={searchInput} setSearchTerm={setSearchInput} />
+      <SearchBar value={searchInput} setValue={setSearchInput} />
 
       <Stack
         gap="xl"
