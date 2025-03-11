@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { Box, Stack, Title } from '@mantine/core';
-import { useTranslation } from 'react-i18next';
 import { useQueryFestivals } from 'src/api/generated/apiComponents';
 import { EmptyStateIndicator } from 'src/components/EmptyStateIndicator';
 import { ErrorIndicator } from 'src/components/ErrorIndicator';
@@ -13,8 +12,6 @@ import { SearchBar } from 'src/components/SearchBar';
 import { useFestivalFilter } from 'src/hooks/useFestivalFilter';
 
 export const Festivals = () => {
-  useTranslation('festivals');
-
   const { data, isFetching, isError } = useQueryFestivals({});
 
   const [searchInput, setSearchInput] = useState('');
