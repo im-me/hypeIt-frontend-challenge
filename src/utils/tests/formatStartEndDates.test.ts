@@ -1,10 +1,6 @@
 import { formatStartEndDates } from '../helpers';
 
 describe('formatStartEndDates', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
   it('should return null if no startDate is provided', () => {
     const result = formatStartEndDates(undefined, '2025-03-01');
 
